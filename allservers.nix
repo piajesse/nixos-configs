@@ -1,3 +1,5 @@
+{ config, pkgs, ... }:
+
 {
 	# Enable OpenSSH daemon
 	services.openssh.enable = true;
@@ -31,7 +33,7 @@
 		LC_TELEPHONE = "en_US.UTF-8";
 		LC_TIME = "en_US.UTF-8";
 	};
-	environment.systemPackages = [
+	environment.systemPackages = with pkgs; [
 		nano
 		vim
 		wget
