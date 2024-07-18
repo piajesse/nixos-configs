@@ -5,10 +5,10 @@
 	services.openssh.enable = true;
 
 	# Optional: Customize OpenSSH configuration
-	#services.openssh.protocol = "2";
-	services.openssh.permitRootLogin = "no";
-	services.openssh.passwordAuthentication = false;
-	services.openssh.port = 22;
+	#services.openssh.settings.Protocol = "2";
+	services.openssh.settings.PermitRootLogin = "no";
+	services.openssh.settings.PasswordAuthentication = false;
+	services.openssh.settings.Port = 22;
 
 	# Bootloader.
 	boot.loader.systemd-boot.enable = true;

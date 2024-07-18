@@ -3,7 +3,7 @@
 {
 	imports = [
 		../allservers.nix
-		../accelerate-networks-servers.nix
+#		../accelerate-networks-servers.nix
 	];
 
 	networking.hostName = "gitlab-runner"; # Define your hostname.
